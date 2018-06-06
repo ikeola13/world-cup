@@ -1,0 +1,444 @@
+ {"data":
+ [
+
+  {
+
+
+
+    "id": 1,
+
+
+
+    "question": "IPSA QUAERAT EST VOLUPTATES CUM EARUM QUAM NUMQUAM IN. VOLUPTATES HARUM EOS AT NON BEATAE NATUS SIT. EST EXPEDITA DOLORES ADIPISCI ALIQUID EST.",
+
+
+
+    "A": "doloribus",
+
+
+
+    "B": "impedit",
+
+
+
+    "C": "quae",
+
+
+
+    "D": "dolorem",
+
+
+
+    "ANS": "doloribus",
+
+
+
+    "created_at": "2018-05-24 18:32:58",
+
+
+
+    "updated_at": "2018-05-24 18:32:58"
+
+
+
+  },
+
+
+
+  {
+
+
+
+    "id": 2,
+
+
+
+    "question": "MOLESTIAS ANIMI MOLESTIAS PROVIDENT VOLUPTATUM NUMQUAM. EXERCITATIONEM SOLUTA NUMQUAM DICTA VOLUPTATEM UT.",
+
+
+
+    "A": "sapiente",
+
+
+
+    "B": "qui",
+
+
+
+    "C": "est",
+
+
+
+    "D": "consectetur",
+
+
+
+    "ANS": "sapiente",
+
+
+
+    "created_at": "2018-05-24 18:32:58",
+
+
+
+    "updated_at": "2018-05-24 18:32:58"
+
+
+
+  },
+
+
+
+  {
+
+
+
+    "id": 3,
+
+
+
+    "question": "ATQUE DOLOREMQUE DEBITIS VERO TEMPORA. IUSTO INCIDUNT UT DEBITIS AUT. EST EXPLICABO SAPIENTE REPELLENDUS NEMO QUI. DOLOREM DELECTUS DOLORES IMPEDIT POSSIMUS NULLA DIGNISSIMOS SIT.",
+
+
+
+    "A": "temporibus",
+
+
+
+    "B": "quia",
+
+
+
+    "C": "et",
+
+
+
+    "D": "consequuntur",
+
+
+
+    "ANS": "temporibus",
+
+
+
+    "created_at": "2018-05-24 18:32:58",
+
+
+
+    "updated_at": "2018-05-24 18:32:58"
+
+
+
+  },
+
+
+
+  {
+
+
+
+    "id": 4,
+
+
+
+    "question": "UT CULPA ERROR RATIONE OFFICIA QUO. SAEPE MINUS IN NATUS. PERFERENDIS EXPEDITA A FUGIAT AUT EUM.",
+
+
+
+    "A": "nemo",
+
+
+
+    "B": "reprehenderit",
+
+
+
+    "C": "velit",
+
+
+
+    "D": "voluptatem",
+
+
+
+    "ANS": "nemo",
+
+
+
+    "created_at": "2018-05-24 18:32:58",
+
+
+
+    "updated_at": "2018-05-24 18:32:58"
+
+
+
+  },
+
+
+
+  {
+
+
+
+    "id": 5,
+
+
+
+    "question": "CONSECTETUR EX IPSUM VOLUPTATEM RERUM NON MOLLITIA QUISQUAM. AUT QUAM QUI EX SED AUT EXPLICABO MAIORES IN. VENIAM IMPEDIT REM AUT QUI ASSUMENDA AUTEM. DELECTUS NISI ID PARIATUR NON.",
+
+
+
+    "A": "blanditiis",
+
+
+
+    "B": "commodi",
+
+
+
+    "C": "est",
+
+
+
+    "D": "labore",
+
+
+
+    "ANS": "blanditiis",
+
+
+
+    "created_at": "2018-05-24 18:32:58",
+
+
+
+    "updated_at": "2018-05-24 18:32:58"
+
+
+
+  },
+
+
+
+  {
+
+
+
+    "id": 6,
+
+
+
+    "question": "ITAQUE PERSPICIATIS NAM IN VOLUPTAS AB APERIAM ID SIMILIQUE. NUMQUAM QUI SIT SAEPE ALIQUAM TEMPORIBUS OPTIO RERUM. EVENIET FUGA SEQUI PERSPICIATIS NATUS SUNT SIT.",
+
+
+
+    "A": "velit",
+
+
+
+    "B": "consectetur",
+
+
+
+    "C": "veniam",
+
+
+
+    "D": "aut",
+
+
+
+    "ANS": "velit",
+
+
+
+    "created_at": "2018-05-24 18:32:58",
+
+
+
+    "updated_at": "2018-05-24 18:32:58"
+
+
+
+  },
+
+
+
+  {
+
+
+
+    "id": 7,
+
+
+
+    "question": "UT IURE A HIC OMNIS. NOBIS SOLUTA QUI ET. IPSAM HIC QUIS ID VEL. DOLOR EAQUE ISTE AT MOLLITIA OMNIS SOLUTA NUMQUAM EAQUE. TEMPORA QUI SIT DESERUNT. FUGIT QUAERAT AUT OFFICIA LABORUM.",
+
+
+
+    "A": "minima",
+
+
+
+    "B": "ad",
+
+
+
+    "C": "non",
+
+
+
+    "D": "est",
+
+
+
+    "ANS": "minima",
+
+
+
+    "created_at": "2018-05-24 18:32:58",
+
+
+
+    "updated_at": "2018-05-24 18:32:58"
+
+
+
+  },
+
+
+
+  {
+
+
+
+    "id": 8,
+
+
+
+    "question": "FACERE INCIDUNT QUIS ALIAS EUM VERITATIS HARUM. AB MODI NESCIUNT MAIORES SUNT. NON AUT RERUM APERIAM QUASI SIT.",
+
+
+
+    "A": "atque",
+
+
+
+    "B": "iusto",
+
+
+
+    "C": "facilis",
+
+
+
+    "D": "harum",
+
+
+
+    "ANS": "atque",
+
+
+
+    "created_at": "2018-05-24 18:32:58",
+
+
+
+    "updated_at": "2018-05-24 18:32:58"
+
+
+
+  },
+
+
+
+  {
+
+
+
+    "id": 9,
+
+
+
+    "question": "HARUM ERROR OFFICIA QUIA EX ENIM. NAM ADIPISCI DOLOR EUM FUGIAT CUMQUE. REPELLAT CONSEQUUNTUR EOS TEMPORE QUOD ARCHITECTO UT AUTEM. CORRUPTI QUIS RERUM ASSUMENDA TEMPORE ET ET.",
+
+
+
+    "A": "porro",
+
+
+
+    "B": "saepe",
+
+
+
+    "C": "quo",
+
+
+
+    "D": "ipsam",
+
+
+
+    "ANS": "q",
+
+
+
+    "created_at": "2018-05-24 18:32:58",
+
+
+
+    "updated_at": "2018-05-24 18:32:58"
+
+
+
+  },
+
+
+
+  {
+
+
+
+    "id": 10,
+
+
+
+    "question": "CONSEQUATUR CONSECTETUR AD NESCIUNT DELECTUS ALIQUID EST EXERCITATIONEM. TEMPORA EA REPELLENDUS AUT. EAQUE PERFERENDIS CORRUPTI VOLUPTATES EUM ALIQUID QUOD.",
+
+
+
+    "A": "deserunt",
+
+
+
+    "B": "facere",
+
+
+
+    "C": "quis",
+
+
+
+    "D": "incidunt",
+
+
+
+    "ANS": "o",
+
+
+
+    "created_at": "2018-05-24 18:32:58",
+
+
+
+    "updated_at": "2018-05-24 18:32:58"
+
+
+
+  }
+
+]
+
+}

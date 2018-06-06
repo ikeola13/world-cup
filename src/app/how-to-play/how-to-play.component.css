@@ -1,0 +1,20 @@
+.containerbg{
+    background-image: url(/assets/img/rule_bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.icons{
+    height:40px;
+    width: 40px;
+    border-radius: 4px;
+}
+.fixed-action-btn{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.card-content{
+    padding-left: 50px;
+    padding-right: 80px;
+}

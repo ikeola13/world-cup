@@ -1,0 +1,33 @@
+.centers{
+    position: relative;
+    background: url(/assets/img/Landing-Page.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+}
+.center{
+    position: absolute;
+    top:35%;
+    left:20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.round{
+    border-radius: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 414px) {
+    /* For mobile phones: */
+    .center{
+        position: absolute;
+        top:35%;
+        left:5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

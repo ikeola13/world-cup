@@ -1,0 +1,59 @@
+<div class="row bg center" style="padding-top: 50px">
+  <div class="col s12 l6 offset-l3 m8 offset-m2">
+      <div class="card">
+        <!-- <div class="col s6">
+          <h2>Quiz Registration</h2>
+        </div> -->
+        <div class="col s10 offset-s1 l6 offset-l3 m6 offset-m3" style="padding-top:15px">
+          <img src="../assets/img/logo.png"  height="75px">
+        </div>
+        <div class="card-content">
+          <form #registerForm="ngForm">
+            <div class="row">
+              <div class="input-field col s12 m12 l12">
+                <i class="material-icons prefix">account_circle</i>
+                <input type="text" name="Name" #Name ngModel required>
+                <label for="username">Username</label>
+              </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m6 l6">
+                  <i class="material-icons prefix">mail</i>
+                  <input type="email" name="Email" #Email ngModel required  class="validate">
+                  <label for="email">Email</label>
+                </div>
+
+                <div class="input-field col s12 m6 l6">
+                  <i class="material-icons prefix">phone_android</i>
+                  <input type="tel" name="phoneNumber" #phoneNumber ngModel required [pattern]="numbers">
+                  <label for="phoneNumber">Phone Number </label>
+                </div>
+                
+            </div>
+          <div class="row">
+            <div class="input-field col s12 m6 l6">
+              <i class="material-icons prefix">flag</i>
+              <select ngModel>
+                <option *ngFor='let country of countries' [value]="country.value" >{{country.name}}</option>
+              </select>
+              <label for="country">Country</label>
+            </div>
+            <div class="input-field col s12 m6 l6">
+              <i class="material-icons prefix">filter_9</i>
+              <input type="text" name="jerseyNumber" #jerseyNumber ngModel required [pattern]="number">
+              <label for="jerseyNumber">Jersey Number</label>
+            </div>
+          </div>
+        
+          <div class="row">
+              <div class="input-field col s12 m12 l12">
+                <button class="btn-large btn-submit" type="submit">Start</button>
+              </div>
+          </div>
+        </form>
+
+        </div>
+        
+        </div>
+  </div>
+</div>

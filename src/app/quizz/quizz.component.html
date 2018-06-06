@@ -1,0 +1,52 @@
+<app-navbar></app-navbar>
+<div class="container-fluid containerbgs">
+  <div class="row">
+    <div class="col s8 offset-s2 transparent">
+      <div class="progress">
+        <div class="determinate" [style.width.%]="(questionNumber+1)*10"></div>
+      </div>
+        <div class="card" style="border-radius: 10px">
+            <div class="card-content">
+              <div class="card-content black-text">
+                <p>{{quizzService.seconds}} seconds</p>
+                <p>Question{{questionNumber + 1}}.</p>
+                <p> {{questions[questionNumber].question}}</p>
+              </div>
+              <div *ngIf="scores!=null" class="card-content black-text">
+                  <span>Scores:</span>
+                  <p> {{scores}}</p>
+              </div>
+            </div>
+            <div class="card-action">
+              <ul class="collection answer">
+                 <li class="collection-item" (click)="Answer(questions[questionNumber].A)">
+                  {{questions[questionNumber].A}}
+                  </li>
+                  <li class="collection-item" 
+                  (click)="Answer(questions[questionNumber].B)">
+                  {{questions[questionNumber].B}}
+                  </li>
+                  <li class="collection-item" 
+                  (click)="Answer(questions[questionNumber].C)">
+                  {{questions[questionNumber].C}}
+                  </li>
+                  <li class="collection-item" 
+                  (click)="Answer(questions[questionNumber].D)">
+                  {{questions[questionNumber].D}}
+                  </li>
+              </ul>
+              
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
