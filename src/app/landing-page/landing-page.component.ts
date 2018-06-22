@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CeiboShare } from 'ng2-social-share';
 
 @Component({
   selector: 'app-landing-page',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-page.component.css']
 })
 export class LandingPageComponent implements OnInit {
+
 
   constructor() { }
 

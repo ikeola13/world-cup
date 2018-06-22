@@ -3,7 +3,6 @@ import { appRoutes } from './routes';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import{ FormsModule } from '@angular/forms';
-
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -18,6 +17,10 @@ import { HttpModule} from '@angular/http';
 import { ResultComponent } from './result/result.component';
 import { QuizzService } from './services/quizz.service';
 import { LandingPage2Component } from './landing-page2/landing-page2.component';
+import {DataService} from './services/data.service';
+
+
+
 
 
 @NgModule({
@@ -39,9 +42,8 @@ import { LandingPage2Component } from './landing-page2/landing-page2.component';
     RouterModule.forRoot(appRoutes),
     FormsModule,
     HttpModule,
-   
-  ],
-  providers: [QuizzService],
+    ],
+  providers: [QuizzService,DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

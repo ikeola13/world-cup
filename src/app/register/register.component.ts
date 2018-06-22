@@ -1,56 +1,70 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { DataService } from "../services/data.service";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  selector: "app-register",
+  templateUrl: "./register.component.html",
+  styleUrls: ["./register.component.css"]
 })
 export class RegisterComponent implements OnInit {
+
+  // initialize variables
   countries;
-  number="^[0-9]{1,2}";
-  numbers="^[0-9]{11}";
-  selectedValue=null;
-  
-  constructor() { }
+  number = "^[0-9]{1,2}";
+  numbers = "^[0-9]{11}";
+  selectedValue = null;
+  badcall = false;
+
+
+  constructor(public dataService: DataService, private router: Router) {}
 
   ngOnInit() {
-    this.countries =[
-      {name:"Argentina", value: "Argentina"},
-      {name:"Australia", value: "Australia"},
-      {name:"Belgium", value: "Belgium"},
-      {name:"Brazil", value: "Brazil"},
-      {name:"Colombia", value: "Colombia"},
-      {name:"Costa Rica", value: "Costa-Rica"},
-      {name:"Croatia", value: "Croatia"},
-      {name:"Denmark", value: "Denmark"},
-      {name:"Egypt ", value: "Egypt"},
-      {name:"England ", value: "England"},
-      {name:"France", value: "France"},
-      {name:"Germany", value: "Germany"},
-      {name:"Iceland", value: "Iceland"},
-      {name:"Iran", value: "Iran"},
-      {name:"Japan", value: "Japan"},
-      {name:"Mexico", value: "Mexico"},
-      {name:"Morocco", value: "Morocco"},
-      {name:"Nigeria", value: "Nigeria"},
-      {name:"Panama ", value: "Panama"},
-      {name:"Peru", value: "Peru"},
-      {name:"Poland", value: "Poland"},
-      {name:"Portugal", value: "Portugal"},
-      {name:"Russia", value: "Russia"},
-      {name:"Saudi Arabia", value: "Saudi-Arabia"},
-      {name:"Senegal", value: "Senegal"},
-      {name:"Serbia", value: "Serbia"},
-      {name:"South Korea", value: "South-Korea"},
-      {name:"Spain", value: "Spain"},
-      {name:"Sweden", value: "Sweden"},
-      {name:"Switzerland", value: "Switzerland"},
-      {name:"Tunisia", value: "Tunisia"},
-      {name:"Uruguay", value: "Uruguay"}
-    ]
-
+    console.log(this.dataService.sharedData);
   }
 
- 
+  onChange2(val) {
+    console.log(val);
+  }
 
+  reg(
+    name: HTMLInputElement,
+    phone: HTMLInputElement,
+    country: HTMLInputElement,
+    jersey: HTMLInputElement
+  ): boolean {
+
+    // validate user's input
+    if (name.value.length <= 0) {
+      console.log("bad name");
+      this.badcall = true ; 
+
+      return false;
+    } else if (phone.value.length <= 10) {
+      console.log("bad phone");
+      this.badcall = true ; 
+
+      return false;
+    } else if (country.value.length <= 0) {
+      console.log("bad country");
+      this.badcall = true ; 
+
+      return false;
+    } else if (jersey.value.length <= 0) {
+      console.log("bad jersey");
+      this.badcall = true ; 
+
+      return false;
+    } else {
+      this.badcall = false;
+      this.dataService.country = country.value;
+      this.dataService.jersey_number = jersey.value;
+      this.dataService.phone = phone.value;
+      this.dataService.username = name.value;
+
+      this.router.navigateByUrl("/quiz");
+
+      return true;
+    }
+  }
 }

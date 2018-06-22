@@ -3,7 +3,11 @@ import { Router } from '@angular/router';
 import { Http } from '@angular/http';
 
 @Injectable()
+
 export class QuizzService {
+
+  // initialize variables
+
   baseUrl='http://45.32.231.89/api/v1/';
   correctAnswers: any[];
   questions: any[];
@@ -11,11 +15,11 @@ export class QuizzService {
   questionNumber=0;
   result;
   timer;
-  seconds=30;
+  seconds=90;
+
 
   constructor(private http: Http, private router:Router) { 
-   
-  }
+   }
 
   getQuestions() {
     return  this.baseUrl ;
