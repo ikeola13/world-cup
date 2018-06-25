@@ -94,36 +94,48 @@ export class LeaderboardComponent implements OnInit {
      if (this.result == 100 ){
        this.showmessage = "Yaay! you're the best" ;
        this.showmessage2 = "You are legendary MESSI!!!" ;
-       this.messager = "I AM THE LEGENDARY MESSI!!!, Become a legend in 90seconds and stand a chance of winning N50,000 worth of airtime!"
+       this.messager = "Become a legend in 90seconds and stand a chance of winning N50,000 worth of airtime!"
      }
      else if (this.result >= 90 && this.result < 100 ){
       this.showmessage = "Excellent!!" ;
       this.showmessage2 = "You are legendary PELE!!!" ;
-      this.messager = "I AM THE LEGENDARY PELE!!!, Become a legend in 90seconds and stand a chance of winning N50,000 worth of airtime!"
+      this.messager = "Become a legend in 90seconds and stand a chance of winning N50,000 worth of airtime!"
 
      }
      else if (this.result >= 80 && this.result < 90){
       this.showmessage = "you did well! " ;
       this.showmessage2 = "You are legendary OKOCHA!!!" ;
-      this.messager = "I AM THE LEGENDARY OKOCHA!!!, Become a legend in 90seconds and stand a chance of winning N50,000 worth of airtime!"
+      this.messager = "Become a legend in 90seconds and stand a chance of winning N50,000 worth of airtime!"
 
      }
-     else if (this.result >= 60 && this.result < 80){
+     else if (this.result >= 70 && this.result < 80){
       this.showmessage = "you did well! " ;
       this.showmessage2 = "You are legendary XAVI!!!" ;
-      this.messager = "I AM THE LEGENDARY XAVI!!!, Become a legend in 90seconds and stand a chance of winning N50,000 worth of airtime!"
+      this.messager = "Become a legend in 90seconds and stand a chance of winning N50,000 worth of airtime!"
 
      }
-     else if (this.result >= 40 && this.result < 60){
+     else if (this.result >= 60 && this.result < 70){
+      this.showmessage = "you did well! " ;
+      this.showmessage2 = "You are legendary BABAYARO!!!" ;
+      this.messager = "Become a legend in 90seconds and stand a chance of winning N50,000 worth of airtime!"
+
+     }
+     else if (this.result >= 50 && this.result < 60){
+      this.showmessage = "you tried!" ;
+      this.showmessage2 = "You are legendary KANU!!!" ;
+      this.messager = "Become a legend in 90seconds and stand a chance of winning N50,000 worth of airtime!"
+
+     }
+     else if (this.result >= 40 && this.result < 50){
       this.showmessage = "you tried!" ;
       this.showmessage2 = "You are legendary JOHN TERRY!!!" ;
-      this.messager = "I AM THE LEGENDARY JOHN TERRY!!!, Become a legend in 90seconds and stand a chance of winning N50,000 worth of airtime!"
+      this.messager = "Become a legend in 90seconds and stand a chance of winning N50,000 worth of airtime!"
 
      }
      else {
       this.showmessage = "awww, you can do better" ;
       this.showmessage2 = "SORRY, You are not a legend !" ;
-      this.messager = "I AM THE LEGENDARY JOHN TERRY !!!, Become a legend in 90seconds and stand a chance of winning N50,000 worth of airtime!"
+      this.messager = "Become a legend in 90seconds and stand a chance of winning N50,000 worth of airtime!"
 
      }
    }
