@@ -1,0 +1,38 @@
+<div class="container-fluid containerbg">
+  <div class="row" style="padding-top:20px; padding-bottom: 20px">
+    <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card" style="border-radius: 10px">
+            <div class="card-content">
+                <div class="fixed-action-btn">
+                    <a class="btn-floating btn-small red" routerLink="/">
+                      <i class="large material-icons">close</i>
+                    </a>
+                </div>
+                <h3 style="color: #100540; padding-top: 50px; text-align: center">
+                  Leaderboard
+                </h3>
+                
+                  <table class="striped">   
+                      <thead>
+                        <tr>
+                            <th style="text-align: center">Rank</th>
+                            <th style="text-align: center">Name</th>
+                            <th style="text-align: center">Scores (%)</th>
+                        </tr>
+                      </thead>
+              
+                      <tbody >
+                        <tr *ngFor="let data of leaders">
+                          <td style="text-align: center"  class="counterCell"></td>
+                          <td style="text-align: center">{{data.username}}</td>
+                          <td style="text-align: center">{{data.score}}</td>
+                        </tr>
+                      
+                      </tbody>
+                    </table>    
+              
+            </div>
+        </div>
+    </div>
+  </div>
+</div>

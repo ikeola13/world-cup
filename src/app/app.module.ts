@@ -18,6 +18,7 @@ import { ResultComponent } from './result/result.component';
 import { QuizzService } from './services/quizz.service';
 import { LandingPage2Component } from './landing-page2/landing-page2.component';
 import {DataService} from './services/data.service';
+import { ViewleaderComponent } from './viewleader/viewleader.component';
 
 
 
@@ -35,6 +36,7 @@ import {DataService} from './services/data.service';
     QuizzComponent,
     ResultComponent,
     LandingPage2Component,
+    ViewleaderComponent,
     
   ],
   imports: [
