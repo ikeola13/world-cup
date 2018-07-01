@@ -22,7 +22,6 @@ import {DataService} from './services/data.service';
 
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +35,7 @@ import {DataService} from './services/data.service';
     QuizzComponent,
     ResultComponent,
     LandingPage2Component,
+    
   ],
   imports: [
     BrowserModule,
@@ -46,4 +46,6 @@ import {DataService} from './services/data.service';
   providers: [QuizzService,DataService],
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule { }

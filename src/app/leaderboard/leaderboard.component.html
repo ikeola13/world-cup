@@ -17,14 +17,35 @@
       
       <p class="center-align white-text finalscore">{{result}} %</p>
 
-      <p style="    font-size: 20px;
-      color: darkblue;
-      text-transform: capitalize;">{{showmessage}}</p>
+      
       <p style="font-size: 30px;
       text-transform: uppercase;
-      color: darkblue;">{{showmessage2}}</p>
+      color: darkblue;">{{showmessage2}} <br> <a style="font-size: 20px; color: darkblue;">{{above}} </a></p>
+      <p style="    font-size: 20px;
+      color: darkblue;
+      text-transform: capitalize;">{{showmessagel}}</p>
 
-      <p style="font-size: 20px;">Share:</p>
+      <p style="font-size: 20px;
+      text-transform: uppercase;
+      color: darkblue;">Your Position on the leaderboard is <a style="    background-color: white;
+      padding: 10px;
+      border-radius: 8px;">{{finalrank}}</a></p>
+
+      <div *ngIf="tryagain" style="background-color: black;
+      padding: 10px;
+      color: white;
+      cursor: pointer;
+      width: 30%;
+      margin: 0 auto;">
+       <a style="color:white" href="http://trivia.becomealegend90.com">PLEASE TRY AGAIN!</a>
+      </div>
+      
+      <p style="font-size: 20px;
+      background-color: black;
+      color: white;
+      margin: 0 auto;
+      width: 70%;
+      margin-top: 5px;">Share: <br>
 
       <a href="https://twitter.com/share?url=http://trivia.becomealegend90.com&amp;hashtags=worldcup&amp;text={{messager}}" target="_blank">
         <img style="width: 7%;" src="../../assets/img/twitter.png" alt="Twitter" />
@@ -33,6 +54,8 @@
     <a href="http://www.facebook.com/sharer.php?u=http://trivia.becomealegend90.com" target="_blank">
       <img style="width: 7%;" src="../../assets/img/facebook.png" alt="Facebook" />
   </a>
+
+</p>
 
     </div>
     <div  class="col s12 m6 l6">
@@ -57,4 +80,3 @@
     </div>
   </div>
 </div>
-

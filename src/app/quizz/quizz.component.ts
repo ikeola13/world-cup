@@ -50,7 +50,7 @@ export class QuizzComponent implements OnInit {
 
   // get questions from API
   getQuestion() {
-    console.log(this.dataservice.country, this.dataservice.username, this.dataservice.jersey_number, this.dataservice.phone)
+    console.log(this.dataservice.country, this.dataservice.username, this.dataservice.jersey_number, this.dataservice.phone, this.dataservice.email)
     this.http
       .get(
         // this.quizzService.getQuestions() + "question/brazil"
@@ -82,7 +82,8 @@ export class QuizzComponent implements OnInit {
         phone:  this.dataservice.phone,
         country: this.dataservice.country,
         jersey_number: this.dataservice.jersey_number,
-        score: this.scores
+        score: this.scores,
+        email: this.dataservice.email
   
       }
       console.log(body);

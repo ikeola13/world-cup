@@ -31,7 +31,8 @@ export class RegisterComponent implements OnInit {
     name: HTMLInputElement,
     phone: HTMLInputElement,
     country: HTMLInputElement,
-    jersey: HTMLInputElement
+    jersey: HTMLInputElement,
+    email: HTMLInputElement
   ): boolean {
 
     // validate user's input
@@ -51,16 +52,23 @@ export class RegisterComponent implements OnInit {
 
       return false;
     } else if (jersey.value.length <= 0) {
-      console.log("bad jersey");
+      console.log("check jersey number");
       this.badcall = true ; 
 
       return false;
-    } else {
+    }  else if (email.value.length <= 0) {
+      console.log("check email");
+      this.badcall = true ; 
+
+      return false;
+    }
+     else {
       this.badcall = false;
       this.dataService.country = country.value;
       this.dataService.jersey_number = jersey.value;
       this.dataService.phone = phone.value;
       this.dataService.username = name.value;
+      this.dataService.email = email.value;
 
       this.router.navigateByUrl("/quiz");
 

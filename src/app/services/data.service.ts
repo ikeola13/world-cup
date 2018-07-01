@@ -15,6 +15,7 @@ export class DataService {
   country;
   jersey_number;
   score;
+  email;
 
 
 }
